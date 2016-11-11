@@ -8,5 +8,14 @@
     "lodash": "^4.14.1",
     "supertest": "^2.0.0",
     "supertest-as-promised": "^3.2.0"
+  },
+  "dependencies": {
+    "ava": "^0.16.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "faker": "^3.1.0",
+    "lodash": "^4.16.6",
+    "supertest": "^2.0.1",
+    "supertest-as-promised": "^4.0.2"
   }
 }
