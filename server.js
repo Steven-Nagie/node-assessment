@@ -7,12 +7,12 @@ app.use(bodyParser.json());
 
 app.get('/api/users', users.indexUsers);
 app.get('/api/users/:privilege', users.showUserPrivilege);
-app.get('/api/users/:id', users.showUserId);
+// app.get('/api/users/:id', users.showUserId);
 app.post('/api/users', users.createUser);
 app.post('/api/users/admin', users.createAdmin);
 app.post('/api/users/language/:id', users.updateLanguage);
-// app.post('/api/users/forums/:id', users.updateFavs);
-// app.delete('/api/users/forums/:id', users.destroyFavs);
+app.post('/api/users/forums/:id', users.updateFavs);
+app.delete('/api/users/forums/:id', users.destroyFavs);
 app.delete('/api/users/:id', users.destroyUser);
 app.put('/api/users/:id', users.updateUser);
 
